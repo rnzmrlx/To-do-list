@@ -12,7 +12,17 @@ while True:
 
     if choice == "1":
         task = input("Enter a task: ")
-        tasks.append({"name": task, "completed": False})
+        priority = input("Priority (High/Medium/Low): ").capitalize()
+
+        if priority not in ["High", "Medium", "Low"]:
+            priority = "Medium"
+            print("Invalid priority. Defaulting to Medium.")
+
+        tasks.append({
+            "name": task,
+            "priority": priority,
+            "completed": False
+        })
         print("Task added successfully!")
 
     elif choice == "2":
@@ -22,7 +32,11 @@ while True:
             print("\nYour Tasks:")
             for number, task in enumerate(tasks, start=1):
                 status = "Completed" if task["completed"] else "Pending"
-                print(f'{number}. {task["name"]} - {status}')
+                print(
+                    f'{number}. {task["name"]} '
+                    f'| Priority: {task["priority"]} '
+                    f'| Status: {status}'
+                )
 
     elif choice == "3":
         if not tasks:
