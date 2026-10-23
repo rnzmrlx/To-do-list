@@ -1,7 +1,7 @@
 # To-Do List Program
 
-**Name:** YOUR FULL NAME  
-**Section:** YOUR SECTION
+**Name:** Reanoza Marilex Rabosa  
+**Section:** BSIT - IT3R4
 
 ## Description
 
