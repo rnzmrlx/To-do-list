@@ -5,31 +5,29 @@
 
 ## Description
 
-The To-Do List is a simple Python program that helps users organize their daily tasks. Users can add new tasks, view their task list, and exit the program.
+The To-Do List is a simple Python program that helps users manage their daily tasks through a menu-based interface.
 
 ## Features
 
-- Add tasks
-- View all saved tasks while the program is running
-- Display a message when there are no tasks
-- Simple menu-based interface
+- Add new tasks with priority levels.
+- View all tasks and their status.
+- Mark tasks as completed.
+- Delete tasks.
+- Choose High, Medium, or Low priority.
+- Handle invalid task numbers and menu choices.
 
 ## How to Run
 
 1. Install Python on your computer.
 2. Download or clone this repository.
 3. Open a terminal in the project folder.
-4. Run the following command:
+4. Run:
 
 ```bash
 python todo_list.py
 ```
 
-If your computer uses `python3`, run:
-
-```bash
-python3 todo_list.py
-```
+Alternatively, use `python3 todo_list.py` if required by your system.
 
 ## Programming Language
 
